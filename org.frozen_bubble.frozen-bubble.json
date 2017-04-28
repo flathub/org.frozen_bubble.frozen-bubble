@@ -25,6 +25,32 @@
     "modules": [
         {
             "name": "perl",
+            "cleanup": [
+                "*.pod",
+                "/bin/perl5.24.1",
+                "/bin/c2ph",
+                "/bin/corelist",
+                "/bin/cpan",
+                "/bin/enc2xs",
+                "/bin/encguess",
+                "/bin/h2*",
+                "/bin/instmodsh",
+                "/bin/json_pp",
+                "/bin/libnetcfg",
+                "/bin/perlbug",
+                "/bin/perldoc",
+                "/bin/perlthanks",
+                "/bin/piconv",
+                "/bin/pl2pm",
+                "/bin/pod*",
+                "/bin/prove",
+                "/bin/pstruct",
+                "/bin/ptar*",
+                "/bin/shasum",
+                "/bin/splain",
+                "/bin/xsubpp",
+                "/bin/zipdetails"
+            ],
             "sources": [
                 {
                     "type": "archive",
