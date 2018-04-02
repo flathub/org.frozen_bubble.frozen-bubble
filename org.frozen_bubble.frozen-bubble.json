@@ -124,8 +124,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/P/PL/PLICEASE/Class-Inspector-1.31.tar.gz",
-                    "sha256": "065f649f1f7a676f0496c37dc155cf4812edb77bdbb0e95d28c985deff930eeb"
+                    "url": "http://search.cpan.org/CPAN/authors/id/P/PL/PLICEASE/Class-Inspector-1.32.tar.gz",
+                    "sha256": "cefadc8b5338e43e570bc43f583e7c98d535c17b196bcf9084bb41d561cc0535"
                 },
                 {
                     "type": "file",
