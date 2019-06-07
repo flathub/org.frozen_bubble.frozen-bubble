@@ -6,6 +6,7 @@ SentUpstream: 2014-09-17
 -->
 <application>
   <id type="desktop">frozen-bubble.desktop</id>
+  <project_license>GPL-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>An addictive game about frozen bubbles</summary>
   <description>
