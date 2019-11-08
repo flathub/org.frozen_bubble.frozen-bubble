@@ -6,7 +6,12 @@ SentUpstream: 2014-09-17
 -->
 <application>
   <id type="desktop">frozen-bubble.desktop</id>
+  <project_license>GPL-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <id>frozen-bubble.desktop</id>
+  </provides>
+  <name>Frozen Bubble</name>
   <summary>An addictive game about frozen bubbles</summary>
   <description>
     <p>
@@ -20,11 +25,11 @@ SentUpstream: 2014-09-17
   </description>
   <url type="homepage">http://www.frozen-bubble.org/</url>
   <screenshots>
-    <screenshot type="default">https://www.filepicker.io/api/file/zfCHFlCsR4OnStuPBwmQ</screenshot>
-    <screenshot>https://www.filepicker.io/api/file/eqPdEWZMTtS1Un1LoRQ0</screenshot>
+    <screenshot type="default">https://upload.wikimedia.org/wikipedia/commons/3/34/Frozen_Bubble_2_-_Single_player.png</screenshot>
+    <screenshot>https://upload.wikimedia.org/wikipedia/commons/d/d5/Frozen_Bubble_2_-_Level_editor.png</screenshot>
   </screenshots>
   <releases>
-		<release version="2.213" date="2012-10-24"/>
+    <release version="2.213" date="2012-10-24"/>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
@@ -55,5 +60,5 @@ SentUpstream: 2014-09-17
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <updatecontact>contact2_at_frozen-bubble.org</updatecontact>
+  <update_contact>contact2_at_frozen-bubble.org</update_contact>
 </application>
