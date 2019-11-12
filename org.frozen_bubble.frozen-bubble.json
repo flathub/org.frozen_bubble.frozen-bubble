@@ -1,7 +1,7 @@
 {
     "app-id": "org.frozen_bubble.frozen-bubble",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "frozen-bubble",
     "rename-icon": "frozen-bubble",
@@ -352,7 +352,8 @@
             "name": "frozen-bubble",
             "no-autogen": true,
             "build-options": {
-                "no-debuginfo": true
+                "no-debuginfo": true,
+                "cflags": "-Wno-error=format-truncation"
             },
             "sources": [
                 {
