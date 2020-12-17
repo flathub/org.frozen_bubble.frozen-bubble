@@ -389,7 +389,9 @@
                 "mkdir -p /app/share/icons/hicolor/32x32/apps",
                 "cp share/icons/frozen-bubble-icon-32x32.png /app/share/icons/hicolor/32x32/apps/frozen-bubble.png",
                 "mkdir -p /app/share/icons/hicolor/48x48/apps",
-                "cp share/icons/frozen-bubble-icon-48x48.png /app/share/icons/hicolor/48x48/apps/frozen-bubble.png"
+                "cp share/icons/frozen-bubble-icon-48x48.png /app/share/icons/hicolor/48x48/apps/frozen-bubble.png",
+                "mkdir -p /app/share/icons/hicolor/64x64/apps",
+                "cp share/icons/frozen-bubble-icon-64x64.png /app/share/icons/hicolor/64x64/apps/frozen-bubble.png"
             ]
         }
     ]
