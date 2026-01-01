@@ -4,10 +4,12 @@
 EmailAddress: contact2@frozen-bubble.org
 SentUpstream: 2014-09-17
 -->
-<application>
-  <id type="desktop">frozen-bubble.desktop</id>
+<component type="desktop-application">
+  <id>org.frozen_bubble.frozen-bubble</id>
+  <developer_name>The Frozen-Bubble Team</developer_name>
   <project_license>GPL-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
+  <launchable type="desktop-id">org.frozen_bubble.frozen-bubble.desktop</launchable>
   <provides>
     <id>frozen-bubble.desktop</id>
   </provides>
@@ -23,10 +25,16 @@ SentUpstream: 2014-09-17
       It also contains a level editor for you to create your own games.
     </p>
   </description>
-  <url type="homepage">http://www.frozen-bubble.org/</url>
+  <url type="homepage">https://frozen-bubble.sourceforge.net/</url>
   <screenshots>
-    <screenshot type="default">https://upload.wikimedia.org/wikipedia/commons/3/34/Frozen_Bubble_2_-_Single_player.png</screenshot>
-    <screenshot>https://upload.wikimedia.org/wikipedia/commons/d/d5/Frozen_Bubble_2_-_Level_editor.png</screenshot>
+    <screenshot type="default">
+      <image type="source">https://upload.wikimedia.org/wikipedia/commons/3/34/Frozen_Bubble_2_-_Single_player.png</image>
+      <caption>Single Player</caption>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://upload.wikimedia.org/wikipedia/commons/d/d5/Frozen_Bubble_2_-_Level_editor.png</image>
+      <caption>Level Editor</caption>
+    </screenshot>
   </screenshots>
   <releases>
     <release version="2.213" date="2012-10-24"/>
@@ -61,4 +69,4 @@ SentUpstream: 2014-09-17
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <update_contact>contact2_at_frozen-bubble.org</update_contact>
-</application>
+</component>

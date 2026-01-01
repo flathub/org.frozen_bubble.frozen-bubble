@@ -1,7 +1,7 @@
 {
-    "app-id": "org.frozen_bubble.frozen-bubble",
+    "id": "org.frozen_bubble.frozen-bubble",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "frozen-bubble",
     "rename-icon": "frozen-bubble",
@@ -22,6 +22,10 @@
         "/share/man",
         "*.la", "*.a"
     ],
+    "build-options": {
+        "no-debuginfo": true,
+        "strip": false
+    },
     "modules": [
         {
             "name": "perl",
@@ -54,7 +58,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.cpan.org/src/5.0/perl-5.36.0.tar.gz",
+                    "url": "https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz",
                     "sha256": "e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a"
                 },
                 {
@@ -92,7 +96,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/P/PE/PEREINAR/File-Which-0.05.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/P/PE/PEREINAR/File-Which-0.05.tar.gz",
                     "sha256": "ee85f83119c7a5952c2a44a0183ea5c0809e98129a3473ee36cdf2227c836765"
                 },
                 {
@@ -108,7 +112,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/R/RE/REHSACK/File-ShareDir-1.102.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/R/RE/REHSACK/File-ShareDir-1.102.tar.gz",
                     "sha256": "7c7334b974882587fbd9bc135f6bc04ad197abe99e6f4761953fe9ca88c57411"
                 },
                 {
@@ -124,7 +128,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/P/PL/PLICEASE/Class-Inspector-1.32.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/P/PL/PLICEASE/Class-Inspector-1.32.tar.gz",
                     "sha256": "cefadc8b5338e43e570bc43f583e7c98d535c17b196bcf9084bb41d561cc0535"
                 },
                 {
@@ -140,7 +144,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/B/BI/BINGOS/Archive-Extract-0.80.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/B/BI/BINGOS/Archive-Extract-0.80.tar.gz",
                     "sha256": "25cbc2d5626c14d39a0b5e4fe8383941e085c9a7e0aa873d86e81b6e709025f4"
                 },
                 {
@@ -156,7 +160,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/C/CA/CADE/Text-Patch-1.8.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/C/CA/CADE/Text-Patch-1.8.tar.gz",
                     "sha256": "eaf18e61ba6a3e143846a7cc66f08ce58a0c4fbda92acb31aede25cb3b5c3dcc"
                 },
                 {
@@ -172,7 +176,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.46.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.46.tar.gz",
                     "sha256": "5d7a6a830cf7f2b2960bf8b8afaac16a537ede64f3023827acea5bd24ca77015"
                 },
                 {
@@ -188,7 +192,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/H/HA/HANENKAMP/Tie-Simple-1.03.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/H/HA/HANENKAMP/Tie-Simple-1.03.tar.gz",
                     "sha256": "e73dae00e00c42511154fe0e3b26a8965836f2456e1c0952c9ce22ce3d55fc23"
                 },
                 {
@@ -201,13 +205,10 @@
         {
             "name": "perl-gettext",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.05.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.05.tar.gz",
                     "sha256": "27367f3dc1be79c9ed178732756e37e4cfce45f9e2a27ebf26e1f40d80124694"
                 },
                 {
@@ -223,7 +224,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/U/UR/URI/File-Slurp-9999.19.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/U/UR/URI/File-Slurp-9999.19.tar.gz",
                     "sha256": "ce29ebe995097ebd6e9bc03284714cdfa0c46dc94f6b14a56980747ea3253643"
                 },
                 {
@@ -239,7 +240,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/P/PJ/PJF/IPC-System-Simple-1.25.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/P/PJ/PJF/IPC-System-Simple-1.25.tar.gz",
                     "sha256": "f1b6aa1dfab886e8e4ea825f46a1cbb26038ef3e727fef5d84444aa8035a4d3b"
                 },
                 {
@@ -255,7 +256,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/D/DR/DRTECH/Locale-Maketext-Lexicon-1.00.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/D/DR/DRTECH/Locale-Maketext-Lexicon-1.00.tar.gz",
                     "sha256": "b73f6b04a58d3f0e38ebf2115a4c1532f1a4eef6fac5c6a2a449e4e14c1ddc7c"
                 },
                 {
@@ -268,13 +269,10 @@
         {
             "name": "perl-compress-bzip2",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/Compress-Bzip2-2.25.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/Compress-Bzip2-2.25.tar.gz",
                     "sha256": "1b8a470f22bdd7f7f5b22aeda6779e47f829e7af2d04110f6e8ec2e3f25b4079"
                 },
                 {
@@ -291,7 +289,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-1.59.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-1.59.tar.gz",
                     "sha256": "7a4b1b0aa43ae7231bb3212e86ab6b538725625df06e82772c3da24c8b26e75d"
                 },
                 {
@@ -319,7 +317,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/F/FR/FROGGS/Alien-SDL-1.446.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/F/FR/FROGGS/Alien-SDL-1.446.tar.gz",
                     "sha256": "c9aa2c9dc3c63d89773c7d7203f2a46d1b924d0c72d9f801af147a3dc8bc512a"
                 },
                 {
@@ -332,19 +330,24 @@
         {
             "name": "perl-sdl",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://search.cpan.org/CPAN/authors/id/F/FR/FROGGS/SDL-2.546.tar.gz",
+                    "url": "https://search.cpan.org/CPAN/authors/id/F/FR/FROGGS/SDL-2.546.tar.gz",
                     "sha256": "e08aa73550b3f8d32ced0941c3c629f01c4ba4d480fc269e57f3fa6f8df86631"
                 },
                 {
                     "type": "file",
                     "path": "perl-BuildPL-Makefile",
                     "dest-filename": "Makefile"
+                },
+                {
+                    "type": "patch",
+                    "path": "perl-sdl-fix-gcc15.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "perl-sdl-implicit-declaration-fix.patch"
                 }
             ]
         },
@@ -352,8 +355,7 @@
             "name": "frozen-bubble",
             "no-autogen": true,
             "build-options": {
-                "no-debuginfo": true,
-                "cflags": "-Wno-error=format-truncation"
+                "cflags": "-Wno-error=format-truncation -U_FORTIFY_SOURCE -Wp,-D_FORTIFY_SOURCE=3"
             },
             "sources": [
                 {
@@ -377,6 +379,10 @@
                 {
                     "type": "file",
                     "path": "frozen-bubble.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "frozen-bubble-icon-128x128.png"
                 }
             ],
             "post-install": [
@@ -391,7 +397,9 @@
                 "mkdir -p /app/share/icons/hicolor/48x48/apps",
                 "cp share/icons/frozen-bubble-icon-48x48.png /app/share/icons/hicolor/48x48/apps/frozen-bubble.png",
                 "mkdir -p /app/share/icons/hicolor/64x64/apps",
-                "cp share/icons/frozen-bubble-icon-64x64.png /app/share/icons/hicolor/64x64/apps/frozen-bubble.png"
+                "cp share/icons/frozen-bubble-icon-64x64.png /app/share/icons/hicolor/64x64/apps/frozen-bubble.png",
+                "mkdir -p /app/share/icons/hicolor/128x128/apps",
+                "cp frozen-bubble-icon-128x128.png /app/share/icons/hicolor/128x128/apps/frozen-bubble.png"
             ]
         }
     ]
