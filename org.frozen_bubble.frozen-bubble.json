@@ -22,6 +22,10 @@
         "/share/man",
         "*.la", "*.a"
     ],
+    "build-options": {
+        "no-debuginfo": true,
+        "strip": false
+    },
     "modules": [
         {
             "name": "perl",
@@ -201,9 +205,6 @@
         {
             "name": "perl-gettext",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -220,10 +221,6 @@
         {
             "name": "perl-file-slurp",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true,
-                "strip": false
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -240,10 +237,6 @@
         {
             "name": "perl-ipc-system-simple",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true,
-                "strip": false
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -260,10 +253,6 @@
         {
             "name": "perl-locale-maketext-lexicon",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true,
-                "strip": false
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -280,9 +269,6 @@
         {
             "name": "perl-compress-bzip2",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -300,10 +286,6 @@
             "name": "perl-archive-zip",
             "cleanup": ["/bin"],
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true,
-                "strip": false
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -348,9 +330,6 @@
         {
             "name": "perl-sdl",
             "no-autogen": true,
-            "build-options": {
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -376,7 +355,6 @@
             "name": "frozen-bubble",
             "no-autogen": true,
             "build-options": {
-                "no-debuginfo": true,
                 "cflags": "-Wno-error=format-truncation -U_FORTIFY_SOURCE -Wp,-D_FORTIFY_SOURCE=3"
             },
             "sources": [
