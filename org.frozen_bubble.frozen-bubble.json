@@ -1,7 +1,7 @@
 {
     "id": "org.frozen_bubble.frozen-bubble",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "25.08",
+    "runtime-version": "26.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "frozen-bubble",
     "rename-icon": "frozen-bubble",
@@ -20,7 +20,8 @@
         "/lib/pkgconfig",
         "/share/aclocal",
         "/share/man",
-        "*.la", "*.a"
+        "*.la",
+        "*.a"
     ],
     "modules": [
         {
@@ -87,7 +88,9 @@
         },
         {
             "name": "perl-file-which",
-            "cleanup": ["/bin"],
+            "cleanup": [
+                "/bin"
+            ],
             "no-autogen": true,
             "sources": [
                 {
@@ -286,7 +289,9 @@
         },
         {
             "name": "perl-archive-zip",
-            "cleanup": ["/bin"],
+            "cleanup": [
+                "/bin"
+            ],
             "no-autogen": true,
             "sources": [
                 {
@@ -390,24 +395,13 @@
                 },
                 {
                     "type": "file",
-                    "path": "frozen-bubble-icon-128x128.png"
+                    "path": "frozen-bubble.png"
                 }
             ],
             "post-install": [
-                "mkdir -p /app/share/appdata",
-                "cp frozen-bubble.appdata.xml /app/share/appdata",
-                "mkdir -p /app/share/applications",
-                "cp frozen-bubble.desktop /app/share/applications",
-                "mkdir -p /app/share/icons/hicolor/16x16/apps",
-                "cp share/icons/frozen-bubble-icon-16x16.png /app/share/icons/hicolor/16x16/apps/frozen-bubble.png",
-                "mkdir -p /app/share/icons/hicolor/32x32/apps",
-                "cp share/icons/frozen-bubble-icon-32x32.png /app/share/icons/hicolor/32x32/apps/frozen-bubble.png",
-                "mkdir -p /app/share/icons/hicolor/48x48/apps",
-                "cp share/icons/frozen-bubble-icon-48x48.png /app/share/icons/hicolor/48x48/apps/frozen-bubble.png",
-                "mkdir -p /app/share/icons/hicolor/64x64/apps",
-                "cp share/icons/frozen-bubble-icon-64x64.png /app/share/icons/hicolor/64x64/apps/frozen-bubble.png",
-                "mkdir -p /app/share/icons/hicolor/128x128/apps",
-                "cp frozen-bubble-icon-128x128.png /app/share/icons/hicolor/128x128/apps/frozen-bubble.png",
+                "install -Dm644 frozen-bubble.appdata.xml -t /app/share/metainfo/",
+                "install -Dm644 frozen-bubble.desktop -t /app/share/applications/",
+                "install -Dm644 frozen-bubble.png -t /app/share/icons/hicolor/128x128/apps/",
                 "find /app/lib/perl5 -type f -exec chmod u+w {} \\;",
                 "chmod u+w $FLATPAK_DEST/bin/fb-server",
                 "chmod u+w $FLATPAK_DEST/bin/frozen-bubble*"
